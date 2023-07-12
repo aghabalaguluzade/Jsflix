@@ -302,7 +302,7 @@
    .slider-inner {
     position: relative;
     display: flex;
-/*    gap: 16px;*/
+    gap: 16px;
   }
 
   .slider-list .slider-inner::before,
@@ -558,7 +558,7 @@
     background-color: var(--surface);
     color : var(--on-surface);
     padding: 24px 20px 48px;
-    height: calc(100vh - 96px);
+/*    height: calc(100vh - 96px);*/
     overflow-y: overlay;
     z-index: 1;
   }
@@ -899,8 +899,11 @@
   .movie-detail .slider-inner::before {
     display: none;
   }
-}
 
+  .menu-btn {
+    margin-left: 42px;
+  }
+}
 
 @media(min-width: 1200px) {
   .header {
@@ -938,7 +941,7 @@
   }
 
   .container {
-    height: calc(100vh - 104px);
+/*    height: calc(100vh - 104px);*/
     border-top-left-radius: var(--radius-36);
   }
 
