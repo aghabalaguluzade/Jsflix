@@ -1,5 +1,9 @@
 'use strict';
 
+const addEventOnElements = (elements, eventType, callback) => {
+	for (const elem of elements) elem.addEventListener(eventType,callback);
+}
+
 const searchBox = document.querySelector("[search-box]");
 const searchTogglers = document.querySelectorAll("[search-toggler]");
 
@@ -17,3 +21,7 @@ menuButton.forEach(toggler => {
 		sideBar.classList.toggle("active");
 	});
 });
+
+const getMovieDetail = (movieId) => {
+	window.localStorage.setItem("movieId", String(movieId));
+};
